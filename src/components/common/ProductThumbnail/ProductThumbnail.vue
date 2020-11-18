@@ -27,7 +27,7 @@
           >
           <a
             data-toggle="tooltip"
-            title="Add to Cart"
+            title="Læg i kurv"
             href="#"
             @click.prevent="addLineItem(matchingVariant.sku)"
           >

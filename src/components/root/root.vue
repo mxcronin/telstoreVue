@@ -11,9 +11,6 @@
   <MiniCart />
   <router-view name="header" />
   <router-view />
-  <footer>
-    <router-view name="footer" />
-  </footer>
 </div>
 
 </template>

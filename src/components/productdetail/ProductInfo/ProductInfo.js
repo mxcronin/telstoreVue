@@ -5,7 +5,7 @@ import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks.vue';
 import DetailsSection from '../DetailsSection/DetailsSection.vue';
 import AddToCartForm from '../AddToCartForm/AddToCartForm.vue';
 import BasePrice from '../../common/BasePrice/BasePrice.vue';
-import VariantSelector from '../VariantSelector/VariantSelector.vue';
+import VariantList from '../VariantSelector/VariantList.vue';
 import { locale } from '../../common/shared';
 
 export default {
@@ -21,7 +21,7 @@ export default {
     SocialMediaLinks,
     AddToCartForm,
     BasePrice,
-    VariantSelector,
+    VariantList,
   },
   mixins: [productMixin],
   data: () => ({

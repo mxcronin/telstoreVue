@@ -63,7 +63,7 @@ const getProducts = (component) => {
     loc,
     searchText,
     sort,
-    priceFilter,
+    //priceFilter,
     priceChannel,
   } = products.paramsFromComponent(component);
   if (
@@ -85,7 +85,7 @@ const getProducts = (component) => {
         priceCurrency: currency,
         priceCountry: country,
         ...sort,
-        ...priceFilter,
+        //...priceFilter,
         ...searchText,
       },
       route.query,
@@ -122,6 +122,7 @@ const getProducts = (component) => {
     component.loadingFacets = false;
   });
 };
+
 export default {
   props: ['categorySlug', 'page'],
   components: {

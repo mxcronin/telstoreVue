@@ -47,8 +47,8 @@
                   <div class="logo">
                     <router-link to="/">
                       <img
-                        src="../../../assets/img/logo.svg"
-                        alt="SUNRISE"
+                        src="../../../assets/img/logo.png"
+                        alt="TELMORE"
                         class="img-responsive sunrise-logo"
                       />
                     </router-link>

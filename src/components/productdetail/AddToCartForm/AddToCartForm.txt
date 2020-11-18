@@ -1,4 +1,4 @@
 de:
   addToCart: Zum Warenkorb Hinzufügen
 en:
-  addToCart: Add to Bag
+  addToCart: Læg i kurv

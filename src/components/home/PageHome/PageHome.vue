@@ -3,8 +3,6 @@
 
 <template>
 <span>
-  <Banner />
-
   <div class="banner-area pt-30">
     <div class="custom-container">
       <div class="row">
@@ -16,11 +14,11 @@
           >
             <div class="banner-img banner-hover banner-zoom">
               <router-link
-                :to="{ name: 'products', params: { categorySlug: 'women-clothing-jeans' } }"
+                :to="{ name: 'products', params: { categorySlug: 'smartphones' } }"
               >
-                <img src="assets/img/jeans1.jpg" alt="banner" />
+                <img src="assets/img/iphones.jpg" alt="banner" />
                 <div class="banner-content">
-                  <h3>WOMEN JEANS</h3>
+                  <h3>mobiler</h3>
                 </div>
               </router-link>
             </div>
@@ -36,48 +34,14 @@
               <router-link
                 :to="{ name: 'products', params: { categorySlug: 'men-shoes-sneakers' } }"
               >
-                <img src="assets/img/sho3.jpg" alt="banner" />
+                <img src="assets/img/plans.png" alt="banner" />
                 <div class="banner-content">
-                  <h3>SNEAKERS</h3>
+                  <h3>plans</h3>
                 </div>
               </router-link>
             </div>
           </div>
-          <div
-            class="banner-wrap mb-30 wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="banner-img banner-hover banner-zoom">
-              <router-link
-                :to="{ name: 'products', params: { categorySlug: 'accessories' } }"
-              >
-                <img src="assets/img/acc.jpg" alt="banner" />
-                <div class="banner-content">
-                  <h3>ACCESSORIES</h3>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12">
-          <div
-            class="banner-wrap mb-30 wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay="0.2s"
-          >
-            <div class="banner-img banner-hover banner-zoom">
-              <router-link
-                :to="{ name: 'products', params: { categorySlug: 'women-clothing-swimwear' } }"
-              >
-                <img src="assets/img/s3.jpg" alt="banner" />
-                <div class="banner-content">
-                  <h3>BATHING SUITS</h3>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
+        </div>  
       </div>
     </div>
   </div>

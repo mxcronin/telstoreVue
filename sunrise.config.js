@@ -2,31 +2,40 @@ export default {
   ct: {
     auth: {
       host: process.env.VUE_APP_CT_AUTH_HOST || 'https://auth.europe-west1.gcp.commercetools.com',
-      projectKey: process.env.VUE_APP_CT_PROJECT_KEY || 'sunrise-spa',
+      projectKey: process.env.VUE_APP_CT_PROJECT_KEY || 'telecom',
       credentials: {
-        clientId: process.env.VUE_APP_CT_CLIENT_ID || 'jFVHj0-tO-THQt9evnGTJ2fD',
-        clientSecret: process.env.VUE_APP_CT_CLIENT_SECRET || 'eUQgmtanysDpYxlOePOhcFklrwa5X8Sj',
+        clientId: process.env.VUE_APP_CT_CLIENT_ID || 'ejhXZJVc4W6HQdkoq4SdWkfk',
+        clientSecret: process.env.VUE_APP_CT_CLIENT_SECRET || 'RXjsrQPbSRPwTFQ2VSY8kBKIdnc-Xua9',
       },
-      scopes: [process.env.VUE_APP_CT_SCOPE || 'manage_my_profile:sunrise-spa create_anonymous_token:sunrise-spa'
-      + ' manage_my_payments:sunrise-spa view_products:sunrise-spa manage_my_orders:sunrise-spa'
-      + ' manage_my_shopping_lists:sunrise-spa'],
+      scopes: [process.env.VUE_APP_CT_SCOPE || 'manage_my_profile:telecom create_anonymous_token:telecom'
+      + ' manage_my_payments:telecom view_products:telecom manage_my_orders:telecom'
+      + ' manage_my_shopping_lists:telecom'],
     },
     api: process.env.VUE_APP_CT_API_HOST || 'https://api.europe-west1.gcp.commercetools.com',
   },
   languages: {
     en: 'English',
     de: 'Deutsch',
+    'en-GB': 'English'
   },
   countries: {
     DE: 'Deutschland',
     US: 'United States',
+    DK: 'Danmark'
   },
   formats: {
     number: {
       DE: {
         currency: {
           style: 'currency',
-          currency: 'EUR',
+          currency: 'DKK',
+          currencyDisplay: 'symbol',
+        },
+      },
+      DK: {
+        currency: {
+          style: 'currency',
+          currency: 'DKK',
           currencyDisplay: 'symbol',
         },
       },
@@ -63,7 +72,7 @@ export default {
     { name: 'designer', type: 'enum', component: 'designer' },
   ],
   detailAttributes: [
-    'designer', 'colorFreeDefinition', 'size', 'style', 'gender', 'articleNumberManufacturer',
+    'designer', 'colorFreeDefinition', 'size', 'style', 'gender', 'articleNumberManufacturer', 'Brand', 'Memory'
   ],
   variantSelector: [
     'color', 'size',

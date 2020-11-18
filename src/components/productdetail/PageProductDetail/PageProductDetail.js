@@ -1,5 +1,6 @@
 import Breadcrumb from '../../common/Breadcrumb/Breadcrumb.vue';
 import ProductInfo from '../ProductInfo/ProductInfo.vue';
+import AttributeSelect from '../AttributeSelect/AttributeSelect.vue';
 
 export default {
   props: {
@@ -15,5 +16,6 @@ export default {
   components: {
     Breadcrumb,
     ProductInfo,
+    AttributeSelect
   },
 };
