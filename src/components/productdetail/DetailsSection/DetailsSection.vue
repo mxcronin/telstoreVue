@@ -124,6 +124,18 @@
                 </span>
               </li>
             </ul>
+            <ul class="product-features-list">
+              <li v-for="attribute in otherAttributes"
+                  data-test="product-attributes-list"
+                  :key="attribute.name">
+                <span class="attribute-name">
+                  {{ attribute[0] }}:
+                </span>
+                <span>
+                  {{ attribute[3] || attribute[2] }}
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

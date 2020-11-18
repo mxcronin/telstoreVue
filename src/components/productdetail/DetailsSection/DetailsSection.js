@@ -28,6 +28,18 @@ export default {
         ([, name, value]) => ({ name, value }),
       );
     },
+    otherAttributes() {
+      const selected = this.product.masterData.staged || this.product.masterData.current;
+      const { attributesRaw } = (selected?.allVariants?.[0] || []);
+      const attributes = attributesRaw.map(
+        ({ attributeDefinition: { name, label, type }, value }) => [
+          name, label, getValue(type.name, value, locale(this)),
+        ],
+      );
+      const name = attributes[0];
+      const value = attributes[3];
+      return attributes
+    },
   },
   methods: {
     openAccordion(e) {

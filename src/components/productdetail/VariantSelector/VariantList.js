@@ -22,7 +22,6 @@ export default {
       return sku2
     },
     matchingVariant() {
-        // with query endpoint we cannot really determine
         return this.currentProduct || {};
     }
   },
