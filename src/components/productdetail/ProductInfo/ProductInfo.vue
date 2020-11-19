@@ -22,7 +22,7 @@
         <h3>
           <BasePrice :price="matchingVariant.price" />
         </h3>
-  
+        <div style="padding: 20px 0 20px 0"><h2>Vælg din model</h2></div>
         <VariantList 
             :sku="sku" 
             :key="product.id"

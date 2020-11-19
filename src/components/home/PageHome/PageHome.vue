@@ -3,6 +3,10 @@
 
 <template>
 <span>
+  <div style="width: 1000px; margin: auto">
+      <img style="width: 1000px;" src="assets/img/iphones.jpg" alt="banner" />
+  </div>
+  <div style="width: 1000px; margin: auto">  
   <div class="banner-area pt-30">
     <div class="custom-container">
       <div class="row">
@@ -32,9 +36,9 @@
           >
             <div class="banner-img banner-hover banner-zoom">
               <router-link
-                :to="{ name: 'products', params: { categorySlug: 'men-shoes-sneakers' } }"
+                :to="{ name: 'products', params: { categorySlug: 'plans' } }"
               >
-                <img src="assets/img/plans.png" alt="banner" />
+                <img style="height: 170px" src="assets/img/plans.png" alt="banner" />
                 <div class="banner-content">
                   <h3>plans</h3>
                 </div>
@@ -44,6 +48,7 @@
         </div>  
       </div>
     </div>
+  </div>
   </div>
   <div class="service-area pt-70 pb-70">
     <div class="container">

@@ -1,6 +1,7 @@
 import gql from 'graphql-tag';
 import { locale, getValue } from '../../common/shared';
 import config from '../../../../sunrise.config';
+import PlansInfo from '../ProductInfo/PlansInfo.vue';
 
 export default {
   props: {
@@ -8,6 +9,9 @@ export default {
       type: String,
       required: true,
     },
+  },
+  components: {
+    PlansInfo,
   },
   data: () => ({
     product: null,

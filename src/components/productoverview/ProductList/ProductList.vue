@@ -15,14 +15,14 @@
         v-bind:offset="products.offset"
         v-bind:total="products.total"
       />
-      <ProductFilter
+      <!-- <ProductFilter
         :facets="facets"
         :facetFilter="facetFilter"
         @filter-change="facetFilterChange"
         @channel-change="channelChange"
         :allChannels="allChannels"
         v-bind:show="show"
-      />
+      /> -->
       <div class="shop-wrapper" v-if="products.results.length">
         <div class="row">
           <ProductThumbnail

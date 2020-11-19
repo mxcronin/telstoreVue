@@ -44,14 +44,14 @@
   <div class="product-dec-action-wrap pro-dec-action-2">
     <div class="quality-cart-wrap">
       <div class="quality-wrap">
-        <input
+        <!-- <input
           class="input-text qty"
           type="number"
           name="qty"
           maxlength="12"
           v-model="quantity"
           data-test="add-to-cart-amount"
-          title="Qty">
+          title="Qty"> -->
       </div>
       <div class="pro-cart-wrap">
         <a
@@ -62,10 +62,6 @@
         </a>
       </div>
     </div>
-    <!-- <div class="pro-dec-wishlist-compare">
-      <a title="Add to wishlist" href="#"><i class="dl-icon-heart2"></i></a>
-      <a title="Add to compare" href="#"><i class="dl-icon-compare2"></i></a>
-    </div> -->
   </div>
 
 </template>
